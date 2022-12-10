@@ -26,9 +26,11 @@ def calculate_nb_contained_sections() -> int:
     with open("input01.txt", "r") as f:
         for line in f:
             line_input = read_line(line)
+            # part01
             # nb_contained_sections += int(
             #     is_fully_contained(line_input[0], line_input[1])
             # )
+            # part02
             nb_contained_sections += int(overlaps(line_input[0], line_input[1]))
     return nb_contained_sections
 
